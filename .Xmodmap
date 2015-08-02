@@ -1,0 +1,36 @@
+!!! xmodmap for apple mba keyboard/touchpad
+!! left-to-right
+!
+
+!! clear mod keys
+clear control
+clear Mod1
+clear Mod4
+clear Mod5
+
+!! remap keys
+! control key (left) to super
+! keycode 37 = Super_L NoSymbol Super_L
+
+! option key (left) to meta
+keycode 64 = Meta_L NoSymbol Meta_L
+
+! command key (left) to control
+! keycode 133 = Control_L NoSymbol Control_L
+
+! command key (right) to control
+! keycode 134 = Control_R NoSymbol Control_R
+
+! option key (right) to meta
+keycode 108 = Meta_R NoSymbol Meta_R
+
+!! setup mod keys
+add control = Control_L
+add control = Control_R
+add Mod1    = Alt_L Alt_R Meta_L
+add Mod4    = Super_L
+! carried from previous configs
+add Mod5    = ISO_Level3_Shift Mode_switch
+
+! setup reverse scrolling on touchpad
+! pointer = 1 2 3 5 4 6 8 9 10 11 12 13 14 15 16

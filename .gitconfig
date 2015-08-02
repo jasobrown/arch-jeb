@@ -1,0 +1,17 @@
+[core]
+    editor = emacs -nw
+[alias]
+	br = branch
+	ci = commit
+	co = checkout
+    cp = cherry-pick
+	st = status
+	ru = remote update
+[user]
+	name = Jason Brown
+	email = jasedbrown@gmail.com
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[diff]
+	tool = opendiff
